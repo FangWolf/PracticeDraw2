@@ -39,7 +39,7 @@ public class Practice16TextPathView extends View {
         super.onDraw(canvas);
 
         canvas.drawText(text, 50, 200, paint);
-
+        paint.getTextPath(text,0,14,100,500,textPath);
         canvas.drawPath(textPath, pathPaint);
     }
 }
